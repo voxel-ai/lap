@@ -25,7 +25,13 @@ URL = 'https://github.com/gatagat/lap'
 LICENSE = 'BSD (2-clause)'
 DOWNLOAD_URL = URL
 
-VERSION = "0.5dev"
+with open("yolox/__init__.py", "r") as f:
+    version = re.search(
+        r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]',
+        f.read(), re.MULTILINE
+    ).group(1)
+
+VERSION = version
 
 NUMPY_MIN_VERSION = '1.10.1'
 
