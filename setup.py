@@ -25,7 +25,7 @@ URL = 'https://github.com/gatagat/lap'
 LICENSE = 'BSD (2-clause)'
 DOWNLOAD_URL = URL
 
-with open("yolox/__init__.py", "r") as f:
+with open("lap/__init__.py", "r") as f:
     version = re.search(
         r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]',
         f.read(), re.MULTILINE
