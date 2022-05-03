@@ -6,6 +6,7 @@ import shutil
 import subprocess
 import sys
 import traceback
+import re
 
 if sys.version_info[0] < 3:
     import __builtin__ as builtins
